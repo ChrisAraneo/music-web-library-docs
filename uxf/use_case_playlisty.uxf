@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>480</x>
+      <y>136</y>
+      <w>472</w>
+      <h>664</h>
+    </coordinates>
+    <panel_attributes>Internetowy interfejs użytkownika
+halign=center</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>520</x>
+      <y>176</y>
+      <w>392</w>
+      <h>128</h>
+    </coordinates>
+    <panel_attributes>Strona przeglądania listy utworów
+halign=center</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>520</x>
+      <y>320</y>
+      <w>392</w>
+      <h>272</h>
+    </coordinates>
+    <panel_attributes>Strona edycji listy utworów
+halign=center</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>640</x>
+      <y>208</y>
+      <w>152</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Przeglądanie listy utworów,
+której jest się autorem</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>312</x>
+      <y>240</y>
+      <w>344</w>
+      <h>264</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;310.0;90.0;310.0;90.0;10.0;410.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>736</x>
+      <y>352</y>
+      <w>144</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>Dodanie nowej
+listy utworów do
+bazy danych</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLActor</id>
+    <coordinates>
+      <x>1064</x>
+      <y>232</y>
+      <w>48</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>Serwer</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>720</x>
+      <y>704</y>
+      <w>176</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>Udostępnienie list utworów
+należących do zalogowanego
+użytkownika</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLActor</id>
+    <coordinates>
+      <x>224</x>
+      <y>488</y>
+      <w>128</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>Zalogowany użytkownik</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>552</x>
+      <y>352</y>
+      <w>144</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>Utworzenie nowej
+listy utworów</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>552</x>
+      <y>424</y>
+      <w>144</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>Edycja listy utworów,
+której jest się
+autorem</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>736</x>
+      <y>424</y>
+      <w>144</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>Aktualizacja listy utworów
+w bazie danych</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>552</x>
+      <y>512</y>
+      <w>144</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>Usunięcie listy utworów,
+której jest się
+autorem</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>736</x>
+      <y>512</y>
+      <w>144</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>Usunięcie listy
+w bazie danych</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>312</x>
+      <y>368</y>
+      <w>256</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;170.0;110.0;170.0;110.0;10.0;300.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>312</x>
+      <y>448</y>
+      <w>256</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;90.0;130.0;90.0;130.0;10.0;300.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>312</x>
+      <y>520</y>
+      <w>256</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;20.0;300.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>872</x>
+      <y>248</y>
+      <w>200</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;160.0;140.0;160.0;140.0;10.0;230.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>872</x>
+      <y>264</y>
+      <w>200</w>
+      <h>208</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;240.0;170.0;240.0;170.0;10.0;230.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>872</x>
+      <y>280</y>
+      <w>200</w>
+      <h>272</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;320.0;200.0;320.0;200.0;10.0;230.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>736</x>
+      <y>608</y>
+      <w>144</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Udostępnienie informacji
+o utworach</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>872</x>
+      <y>312</y>
+      <w>224</w>
+      <h>352</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;420.0;260.0;420.0;260.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>552</x>
+      <y>616</y>
+      <w>144</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>Dodanie utworu do
+posiadanej
+listy utworów</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>568</y>
+      <w>288</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;10.0;10.0;100.0;340.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>888</x>
+      <y>312</y>
+      <w>224</w>
+      <h>440</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;530.0;260.0;530.0;260.0;10.0</additional_attributes>
+  </element>
+</diagram>

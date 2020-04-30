@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>376</x>
+      <y>136</y>
+      <w>144</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>Artists
+--
+id_artist: int
+id_artisttype: int
+
+artistname: varchar
+firstname: varchar
+lastname: varchar
+birthday: date
+country: varchar
+
+created_date: datetime
+created_id_user: int
+modified_date: datetime
+modified_id_user: int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>832</x>
+      <y>848</y>
+      <w>144</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>Users
+--
+id_user: int
+username: varchar
+email: varchar
+password: varchar
+join_date: datetime
+login_date: datetime
+reset_code: varchar
+reset_date: datetime
+superuser: boolean
+banned: boolean
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>376</x>
+      <y>8</y>
+      <w>144</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>ArtistLinks
+--
+id_artist: int
+url: varchar</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>440</x>
+      <y>64</y>
+      <w>64</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>lt=-
+id_artist</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>616</x>
+      <y>352</y>
+      <w>144</w>
+      <h>264</h>
+    </coordinates>
+    <panel_attributes>Songs
+--
+id_song: int
+
+title: varchar
+length: int
+year: int
+genre: varchar
+language: varchar
+publisher: varchar
+comment: varchar
+bpm: int
+key: varchar
+termsofuse: varchar
+website: varchar
+
+created_date: datetime
+created_id_user: int
+modified_date: datetime
+modified_id_user: int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>616</x>
+      <y>200</y>
+      <w>144</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>SongLinks
+--
+id_song: int
+url: varchar</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>152</x>
+      <y>160</y>
+      <w>144</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>ArtistType
+--
+id_artisttype: int
+name: varchar</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>288</x>
+      <y>176</y>
+      <w>104</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=-
+id_artisttype</panel_attributes>
+    <additional_attributes>10.0;20.0;110.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>680</x>
+      <y>256</y>
+      <w>64</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=-
+id_song</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>376</x>
+      <y>400</y>
+      <w>144</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>SongsArtists
+--
+id_song: int
+id_artist: id</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>512</x>
+      <y>416</y>
+      <w>120</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=-
+id_song</panel_attributes>
+    <additional_attributes>10.0;20.0;130.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>440</x>
+      <y>328</y>
+      <w>64</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>lt=-
+id_artist</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>376</x>
+      <y>656</y>
+      <w>144</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>Albums
+--
+id_album: int
+id_cover: int
+
+title: varchar
+year: int
+
+created_date: datetime
+created_id_user: int
+modified_date: datetime
+modified_id_user: int
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>160</x>
+      <y>656</y>
+      <w>144</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>Covers
+--
+id_album: int
+data: *</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>296</x>
+      <y>680</y>
+      <w>96</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=-
+id_cover</panel_attributes>
+    <additional_attributes>10.0;20.0;100.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>616</x>
+      <y>672</y>
+      <w>144</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>SongsAlbums
+--
+id_album: int
+id_song: int
+track: int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>512</x>
+      <y>688</y>
+      <w>120</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=-
+id_album</panel_attributes>
+    <additional_attributes>10.0;20.0;130.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>680</x>
+      <y>608</y>
+      <w>64</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=-
+id_song</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>376</x>
+      <y>880</y>
+      <w>144</w>
+      <h>136</h>
+    </coordinates>
+    <panel_attributes>Reviews
+--
+id_album: int
+id_user: int
+
+title: varchar
+content: varchar
+
+created_date: datetime
+modified_date: datetime</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>512</x>
+      <y>928</y>
+      <w>336</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=-
+id_user</panel_attributes>
+    <additional_attributes>400.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>440</x>
+      <y>808</y>
+      <w>72</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>lt=-
+id_album</panel_attributes>
+    <additional_attributes>10.0;90.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>832</x>
+      <y>616</y>
+      <w>144</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>Playlist
+--
+id_playlist: int
+id_user: int
+
+title: varchar
+
+created_date: datetime
+modified_date: datetime
+id_user: int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>832</x>
+      <y>408</y>
+      <w>144</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>SongsPlaylists
+--
+id_playlist: int
+id_song: int
+track: int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>896</x>
+      <y>752</y>
+      <w>56</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=-
+id_user</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>896</x>
+      <y>472</y>
+      <w>56</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=-
+id_user</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;180.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>752</x>
+      <y>440</y>
+      <w>96</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=-
+id_song</panel_attributes>
+    <additional_attributes>10.0;20.0;100.0;20.0</additional_attributes>
+  </element>
+</diagram>

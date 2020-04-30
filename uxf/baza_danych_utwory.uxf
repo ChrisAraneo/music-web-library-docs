@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>270</x>
+      <y>230</y>
+      <w>180</w>
+      <h>330</h>
+    </coordinates>
+    <panel_attributes>Songs
+--
+id_song: int
+
+title: varchar
+length: int
+year: int
+genre: varchar
+language: varchar
+publisher: varchar
+comment: varchar
+bpm: int
+key: varchar
+termsofuse: varchar
+website: varchar
+
+created_date: datetime
+created_id_user: int
+modified_date: datetime
+modified_id_user: int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>440</x>
+      <y>300</y>
+      <w>140</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=-
+id_song</panel_attributes>
+    <additional_attributes>120.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>560</x>
+      <y>270</y>
+      <w>180</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>SongURLs
+--
+id_song: int
+url: varchar</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
