@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>310</x>
+      <y>360</y>
+      <w>180</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>Album
+--
+albumID: Long
+cover: Cover
+
+title: String
+year: Long
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>630</x>
+      <y>360</y>
+      <w>180</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Cover
+--
+coverID: Long
+data: *</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>480</x>
+      <y>390</y>
+      <w>170</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=0..*</panel_attributes>
+    <additional_attributes>150.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>630</x>
+      <y>470</y>
+      <w>180</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>SongsAlbum
+--
+recordID: Long
+album: Album
+song: Song
+track: Long</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>480</x>
+      <y>500</y>
+      <w>170</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=0..*</panel_attributes>
+    <additional_attributes>10.0;10.0;150.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>630</x>
+      <y>610</y>
+      <w>180</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>Review
+--
+reviewID: Long
+album: Album
+user: User
+
+title: String
+content: String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>430</x>
+      <y>550</y>
+      <w>220</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..*
+m2=1</panel_attributes>
+    <additional_attributes>200.0;120.0;10.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
