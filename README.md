@@ -1,2 +1,2 @@
-# music-web-library-docs
+# Internetowy Katalog Muzyczny - Dokumentacja
 Dokumentacja internetowego katalogu muzycznego
