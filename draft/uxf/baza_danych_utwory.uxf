@@ -7,41 +7,37 @@
       <x>270</x>
       <y>230</y>
       <w>180</w>
-      <h>330</h>
+      <h>260</h>
     </coordinates>
-    <panel_attributes>Songs
+    <panel_attributes>Song
 --
-id_song: int
+songID: Long
 
-title: varchar
-length: int
-year: int
-genre: varchar
-language: varchar
-publisher: varchar
-comment: varchar
-bpm: int
-key: varchar
-termsofuse: varchar
-website: varchar
-
-created_date: datetime
-created_id_user: int
-modified_date: datetime
-modified_id_user: int</panel_attributes>
+title: String
+length: Long
+year: Long
+genre: String
+language: String
+publisher: String
+comment: String
+bpm: Long
+key: String
+terms: String
+website: String</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>440</x>
-      <y>300</y>
+      <y>310</y>
       <w>140</w>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=-
-id_song</panel_attributes>
-    <additional_attributes>120.0;20.0;10.0;20.0</additional_attributes>
+m1=0..*
+m2=1</panel_attributes>
+    <additional_attributes>120.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
@@ -51,10 +47,10 @@ id_song</panel_attributes>
       <w>180</w>
       <h>80</h>
     </coordinates>
-    <panel_attributes>SongURLs
+    <panel_attributes>SongURL
 --
-id_song: int
-url: varchar</panel_attributes>
+song: Song
+url: String</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>

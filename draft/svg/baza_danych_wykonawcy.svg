@@ -15,7 +15,7 @@
       ><path d="M0 0 L0 250 L180 250 L180 0 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath4"
-      ><path d="M0 0 L0 70 L170 70 L170 0 Z"
+      ><path d="M0 0 L0 80 L170 80 L170 0 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath5"
       ><path d="M0 0 L0 40 L140 40 L140 0 Z"
@@ -26,13 +26,13 @@
     /></g
     ><g transform="translate(640,470)"
     ><rect fill="none" x="0.5" width="178.5" height="78.5" y="0.5" clip-path="url(#clipPath2)"
-      /><text x="50" font-size="14px" y="17.9688" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none" xml:space="preserve"
-      >SongsArtists</text
+      /><text x="54" font-size="14px" y="17.9688" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none" xml:space="preserve"
+      >SongsArtist</text
       ><path fill="none" d="M1 23.9688 L179 23.9688" clip-path="url(#clipPath2)"
       /><text x="5" font-size="14px" y="38.9375" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none" xml:space="preserve"
-      >id_song: int</text
+      >song: Song</text
       ><text x="5" font-size="14px" y="54.9062" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none" xml:space="preserve"
-      >id_artist: id</text
+      >artist: Artist</text
     ></g
     ><g fill="rgb(255,255,255)" fill-opacity="0" transform="translate(640,230)" stroke-opacity="0" stroke="rgb(255,255,255)"
     ><rect x="0.5" width="178.5" height="78.5" y="0.5" clip-path="url(#clipPath2)" stroke="none"
@@ -43,69 +43,67 @@
       >ArtistType</text
       ><path fill="none" d="M1 23.9688 L179 23.9688" clip-path="url(#clipPath2)"
       /><text x="5" font-size="14px" y="38.9375" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none" xml:space="preserve"
-      >id_artisttype: int</text
+      >artistTypeID: Long</text
       ><text x="5" font-size="14px" y="54.9062" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none" xml:space="preserve"
-      >name: varchar</text
+      >name: String</text
     ></g
     ><g fill="rgb(255,255,255)" fill-opacity="0" transform="translate(640,350)" stroke-opacity="0" stroke="rgb(255,255,255)"
     ><rect x="0.5" width="178.5" height="78.5" y="0.5" clip-path="url(#clipPath2)" stroke="none"
     /></g
     ><g transform="translate(640,350)"
     ><rect fill="none" x="0.5" width="178.5" height="78.5" y="0.5" clip-path="url(#clipPath2)"
-      /><text x="56" font-size="14px" y="17.9688" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none" xml:space="preserve"
-      >ArtistURLs</text
+      /><text x="60" font-size="14px" y="17.9688" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none" xml:space="preserve"
+      >ArtistURL</text
       ><path fill="none" d="M1 23.9688 L179 23.9688" clip-path="url(#clipPath2)"
       /><text x="5" font-size="14px" y="38.9375" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none" xml:space="preserve"
-      >id_artist: int</text
+      >artist: Artist</text
       ><text x="5" font-size="14px" y="54.9062" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none" xml:space="preserve"
-      >url: varchar</text
+      >url: String</text
     ></g
     ><g fill="rgb(255,255,255)" fill-opacity="0" transform="translate(350,230)" stroke-opacity="0" stroke="rgb(255,255,255)"
     ><rect x="0.5" width="178.5" height="248.5" y="0.5" clip-path="url(#clipPath3)" stroke="none"
     /></g
     ><g transform="translate(350,230)"
     ><rect fill="none" x="0.5" width="178.5" height="248.5" y="0.5" clip-path="url(#clipPath3)"
-      /><text x="70" font-size="14px" y="17.9688" clip-path="url(#clipPath3)" font-family="sans-serif" stroke="none" xml:space="preserve"
-      >Artists</text
+      /><text x="74" font-size="14px" y="17.9688" clip-path="url(#clipPath3)" font-family="sans-serif" stroke="none" xml:space="preserve"
+      >Artist</text
       ><path fill="none" d="M1 23.9688 L179 23.9688" clip-path="url(#clipPath3)"
       /><text x="5" font-size="14px" y="38.9375" clip-path="url(#clipPath3)" font-family="sans-serif" stroke="none" xml:space="preserve"
-      >id_artist: int</text
+      >artistID: Long</text
       ><text x="5" font-size="14px" y="54.9062" clip-path="url(#clipPath3)" font-family="sans-serif" stroke="none" xml:space="preserve"
-      >id_artisttype: int</text
+      >artistType: ArtistType</text
       ><text x="5" font-size="14px" y="86.8438" clip-path="url(#clipPath3)" font-family="sans-serif" stroke="none" xml:space="preserve"
-      >artistname: varchar</text
+      >artistName: String</text
       ><text x="5" font-size="14px" y="102.8125" clip-path="url(#clipPath3)" font-family="sans-serif" stroke="none" xml:space="preserve"
-      >firstname: varchar</text
+      >firstName: String</text
       ><text x="5" font-size="14px" y="118.7812" clip-path="url(#clipPath3)" font-family="sans-serif" stroke="none" xml:space="preserve"
-      >lastname: varchar</text
+      >lastName: String</text
       ><text x="5" font-size="14px" y="134.75" clip-path="url(#clipPath3)" font-family="sans-serif" stroke="none" xml:space="preserve"
-      >birthday: date</text
+      >birthDate: Date</text
       ><text x="5" font-size="14px" y="150.7188" clip-path="url(#clipPath3)" font-family="sans-serif" stroke="none" xml:space="preserve"
-      >country: varchar</text
-      ><text x="5" font-size="14px" y="182.6562" clip-path="url(#clipPath3)" font-family="sans-serif" stroke="none" xml:space="preserve"
-      >created_date: datetime</text
-      ><text x="5" font-size="14px" y="198.625" clip-path="url(#clipPath3)" font-family="sans-serif" stroke="none" xml:space="preserve"
-      >created_id_user: int</text
-      ><text x="5" font-size="14px" y="214.5938" clip-path="url(#clipPath3)" font-family="sans-serif" stroke="none" xml:space="preserve"
-      >modified_date: datetime</text
-      ><text x="5" font-size="14px" y="230.5625" clip-path="url(#clipPath3)" font-family="sans-serif" stroke="none" xml:space="preserve"
-      >modified_id_user: int</text
+      >country: String</text
     ></g
     ><g transform="translate(490,470)"
     ><path fill="none" d="M10.5 10.5 L10.5 50.5" clip-path="url(#clipPath4)"
       /><path fill="none" d="M10.5 50.5 L150.5 50.5" clip-path="url(#clipPath4)"
-      /><text x="14" font-size="14px" y="37.9844" clip-path="url(#clipPath4)" font-family="sans-serif" stroke="none" xml:space="preserve"
-      >id_artist</text
+      /><text x="14" font-size="14px" y="38.9688" clip-path="url(#clipPath4)" font-family="sans-serif" stroke="none" xml:space="preserve"
+      >1</text
+      ><text x="108.9863" font-size="14px" y="63.9688" clip-path="url(#clipPath4)" font-family="sans-serif" stroke="none" xml:space="preserve"
+      >0..*</text
     ></g
-    ><g transform="translate(520,250)"
-    ><path fill="none" d="M120.5 20.5 L10.5 20.5" clip-path="url(#clipPath5)"
-      /><text x="27.2588" font-size="14px" y="16" clip-path="url(#clipPath5)" font-family="sans-serif" stroke="none" xml:space="preserve"
-      >id_artisttype</text
+    ><g transform="translate(520,260)"
+    ><path fill="none" d="M120.5 10.5 L10.5 10.5" clip-path="url(#clipPath5)"
+      /><text x="92.2139" font-size="14px" y="23.9688" clip-path="url(#clipPath5)" font-family="sans-serif" stroke="none" xml:space="preserve"
+      >1</text
+      ><text x="29" font-size="14px" y="23.9688" clip-path="url(#clipPath5)" font-family="sans-serif" stroke="none" xml:space="preserve"
+      >0..*</text
     ></g
-    ><g transform="translate(520,370)"
-    ><path fill="none" d="M120.5 20.5 L10.5 20.5" clip-path="url(#clipPath5)"
-      /><text x="40.4897" font-size="14px" y="16" clip-path="url(#clipPath5)" font-family="sans-serif" stroke="none" xml:space="preserve"
-      >id_artist</text
+    ><g transform="translate(520,380)"
+    ><path fill="none" d="M120.5 10.5 L10.5 10.5" clip-path="url(#clipPath5)"
+      /><text x="78.9863" font-size="14px" y="23.9688" clip-path="url(#clipPath5)" font-family="sans-serif" stroke="none" xml:space="preserve"
+      >0..*</text
+      ><text x="29" font-size="14px" y="23.9688" clip-path="url(#clipPath5)" font-family="sans-serif" stroke="none" xml:space="preserve"
+      >1</text
     ></g
   ></g
 ></svg

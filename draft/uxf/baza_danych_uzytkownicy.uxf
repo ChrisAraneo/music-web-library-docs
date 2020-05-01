@@ -7,22 +7,18 @@
       <x>110</x>
       <y>110</y>
       <w>180</w>
-      <h>220</h>
+      <h>170</h>
     </coordinates>
-    <panel_attributes>Users
+    <panel_attributes>User
 --
-id_user: int
-
-username: varchar
-email: varchar
-password: varchar
-join_date: datetime
-login_date: datetime
-reset_code: varchar
-reset_date: datetime
-superuser: boolean
-banned: boolean
-</panel_attributes>
+userID: Long
+name: String
+email: String
+password: String
+superUser: Boolean
+banned: Boolean
+resetCode: String
+resetDate: Date</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>

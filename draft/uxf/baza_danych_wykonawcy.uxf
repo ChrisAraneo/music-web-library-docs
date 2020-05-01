@@ -9,34 +9,30 @@
       <w>180</w>
       <h>250</h>
     </coordinates>
-    <panel_attributes>Artists
+    <panel_attributes>Artist
 --
-id_artist: int
-id_artisttype: int
+artistID: Long
+artistType: ArtistType
 
-artistname: varchar
-firstname: varchar
-lastname: varchar
-birthday: date
-country: varchar
-
-created_date: datetime
-created_id_user: int
-modified_date: datetime
-modified_id_user: int</panel_attributes>
+artistName: String
+firstName: String
+lastName: String
+birthDate: Date
+country: String</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>520</x>
-      <y>370</y>
+      <y>380</y>
       <w>140</w>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=-
-id_artist</panel_attributes>
-    <additional_attributes>120.0;20.0;10.0;20.0</additional_attributes>
+m1=0..*
+m2=1</panel_attributes>
+    <additional_attributes>120.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
@@ -46,10 +42,10 @@ id_artist</panel_attributes>
       <w>180</w>
       <h>80</h>
     </coordinates>
-    <panel_attributes>ArtistURLs
+    <panel_attributes>ArtistURL
 --
-id_artist: int
-url: varchar</panel_attributes>
+artist: Artist
+url: String</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -62,21 +58,22 @@ url: varchar</panel_attributes>
     </coordinates>
     <panel_attributes>ArtistType
 --
-id_artisttype: int
-name: varchar</panel_attributes>
+artistTypeID: Long
+name: String</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>520</x>
-      <y>250</y>
+      <y>260</y>
       <w>140</w>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=-
-id_artisttype</panel_attributes>
-    <additional_attributes>120.0;20.0;10.0;20.0</additional_attributes>
+m1=1
+m2=0..*</panel_attributes>
+    <additional_attributes>120.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
@@ -86,10 +83,10 @@ id_artisttype</panel_attributes>
       <w>180</w>
       <h>80</h>
     </coordinates>
-    <panel_attributes>SongsArtists
+    <panel_attributes>SongsArtist
 --
-id_song: int
-id_artist: id</panel_attributes>
+song: Song
+artist: Artist</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -98,10 +95,11 @@ id_artist: id</panel_attributes>
       <x>490</x>
       <y>470</y>
       <w>170</w>
-      <h>70</h>
+      <h>80</h>
     </coordinates>
     <panel_attributes>lt=-
-id_artist</panel_attributes>
+m1=1
+m2=0..*</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;50.0;150.0;50.0</additional_attributes>
   </element>
 </diagram>
